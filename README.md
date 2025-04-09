@@ -2,8 +2,8 @@
 
 ## 1. Overview 🚀
 This project demonstrates how to **secure a CI/CD pipeline** for a Node.js application by integrating **automated security checks**:
-- **SCA / CVE Scanning** (Software Composition Analysis)
-- **SAST / CWE Scanning** (Static Application Security Testing)
+- **SCA / CVE Scanning**
+- **SAST / CWE Scanning**
 - **Secrets Scanning**
 
 By shifting these checks left, we ensure that only secure, well-tested code is merged and potentially deployed.

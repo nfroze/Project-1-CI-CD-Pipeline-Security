@@ -15,10 +15,10 @@ By shifting these checks left, we ensure that only secure, well-tested code is m
   - Provides the application runtime and npm package manager.
 - **GitHub Actions** 🤖  
   - Automates security scans on every push or pull request.
-- **Semgrep (SCA)** 🔎  
-  - Scans source code for CWEs
 - **npm audit (SAST)** 📦  
   - Scans 3rd party dependencies for CVEs
+- **Semgrep (SCA)** 🔎  
+  - Scans source code for CWEs
 - **Gitleaks** 🔐  
   - Flags secrets like credentials or API tokens.
 

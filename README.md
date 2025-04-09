@@ -18,7 +18,7 @@ By shifting these checks left, we ensure that only secure, well-tested code is m
 - **Semgrep** 🔎  
   - Scans source code for CWEs (SAST).
 - **npm audit** 📦  
-  - Detects vulnerable dependencies (SCA).
+  - Scans 3rd party dependencies for CVEs (SCA).
 - **Gitleaks** 🔐  
   - Flags secrets like credentials or API tokens.
 

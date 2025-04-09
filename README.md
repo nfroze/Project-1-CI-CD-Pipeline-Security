@@ -2,8 +2,8 @@
 
 ## 1. Overview 🚀
 This project demonstrates how to **secure a CI/CD pipeline** for a Node.js application by integrating **automated security checks**:
-- **SAST Scanning to identify CWEs**
-- **SCA Scanning to identify CVEs**
+- **SAST Scanning to look for weaknesses in source code**
+- **SCA Scanning to locate vulnerabilities in dependencies**
 - **Secrets Scanning**
 
 By shifting these checks left, we ensure that only secure, well-tested code is merged and potentially deployed.
@@ -16,9 +16,9 @@ By shifting these checks left, we ensure that only secure, well-tested code is m
 - **GitHub Actions** 🤖  
   - Automates security scans on every push or pull request.
 - **Semgrep** 🔎  
-  - Scans source code for CWEs (SAST).
+  - Scans source code for CWEs
 - **npm audit** 📦  
-  - Scans 3rd party dependencies for CVEs (SCA).
+  - Scans 3rd party dependencies for CVEs
 - **Gitleaks** 🔐  
   - Flags secrets like credentials or API tokens.
 

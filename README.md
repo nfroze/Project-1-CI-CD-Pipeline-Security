@@ -2,8 +2,8 @@
 
 ## 1. Overview 🚀
 This project demonstrates how to **secure a CI/CD pipeline** for a Node.js application by integrating **automated security checks**:
-- **SAST Scanning to look for weaknesses in source code**
-- **SCA Scanning to locate vulnerabilities in dependencies**
+- **SAST Scanning to look for vulnerabilities in source code**
+- **SCA Scanning to look for vulnerabilities in 3rd party code/dependencies**
 - **Secrets Scanning**
 
 By shifting these checks left, we ensure that only secure, well-tested code is merged and potentially deployed.

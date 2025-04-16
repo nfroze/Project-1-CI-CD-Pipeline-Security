@@ -5,7 +5,7 @@ This project demonstrates how to **secure a CI/CD pipeline** for a Node.js appli
 - **SAST**
   - To look for vulnerabilities in source code.
 - **SCA**
-  - To look for vulnerabilities in 3rd party code/dependencies.
+  - To look for vulnerabilities in dependencies.
 - **Secrets Scanning**
   - To detect and prevent the accidental inclusion of sensitive information.
 

@@ -1,6 +1,6 @@
 # 🔒 Project 1: Shift-Left Security Pipeline
 
-[![Security Scan](https://github.com/nfroze/Project-1-CI-CD-Pipeline-Security/actions/workflows/security.yml/badge.svg)](https://github.com/nfroze/Project-1-CI-CD-Pipeline-Security/actions/workflows/security.yml)
+[![Security Scan](https://github.com/nfroze/Project-1-CI-CD-Pipeline-Security/actions/workflows/security.yml/badge.svg)](https://github.com/nfroze/Project-1-CI-CD-Pipeline-Security/actions/workflows/Project-1.yml)
 [![SAST](https://img.shields.io/badge/SAST-Semgrep-green)](https://semgrep.dev/)
 [![SCA](https://img.shields.io/badge/SCA-npm_audit-blue)](https://docs.npmjs.com/cli/v8/commands/npm-audit)
 [![Secrets](https://img.shields.io/badge/Secrets-Gitleaks-red)](https://github.com/gitleaks/gitleaks)

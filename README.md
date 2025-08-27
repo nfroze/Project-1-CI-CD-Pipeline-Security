@@ -1,67 +1,50 @@
-# 🛠️ Project 1: Secure CI/CD
+# Project 1: Secure CI/CD
 
-## 1. Overview 🚀
-This project demonstrates how to **secure a CI/CD pipeline** for a Node.js application by integrating **automated security checks**:
-- **SAST**
-  - To look for vulnerabilities in source code.
-- **SCA**
-  - To look for vulnerabilities in 3rd party code/dependencies.
-- **Secrets Scanning**
-  - To detect and prevent the accidental inclusion of sensitive information.
+## Overview
 
-By shifting these checks left, we ensure that only secure, well-tested code is merged and potentially deployed.
+Security scanning integrated into CI/CD pipeline for Node.js application. Automated checks for code vulnerabilities, dependency issues, and exposed secrets.
 
----
+## Technologies
 
-## 2. Key Technologies 🛠
-- **Node.js** ⚙️  
-  - Provides the application runtime and npm package manager.
-- **GitHub Actions** 🤖  
-  - Automates security scans on every push or pull request.
-- **Semgrep (SAST)** 🔎  
-  - Scans source code for CWEs
-- **npm audit (SCA)** 📦  
-  - Scans 3rd party dependencies for CVEs
-- **Gitleaks** 🔐  
-  - Flags secrets like credentials or API tokens.
+- Node.js - Application runtime and package manager
+- GitHub Actions - CI/CD automation
+- Semgrep - Static application security testing (SAST)
+- npm audit - Software composition analysis (SCA)
+- Gitleaks - Secret detection
 
----
+## Implementation
 
-## 3. Security Highlights 🔒
-- **Early Vulnerability Detection**  
-  - npm audit and Semgrep catch issues before deployment.
-- **Secrets Protection**  
-  - Gitleaks prevents credentials from leaking into version control.
-- **Fail-Fast Pipeline**  
-  - Critical issues stop the pipeline early to protect the app.
+### Security Scans
+- SAST: Semgrep scans source code for vulnerabilities
+- SCA: npm audit checks third-party dependencies for CVEs
+- Secrets: Gitleaks detects exposed credentials or API tokens
 
----
+### Workflow
+1. Trigger: Push or PR to `Project-1/**`
+2. Install npm dependencies
+3. Run security scans:
+   - Semgrep for code analysis
+   - npm audit for dependency vulnerabilities
+   - Gitleaks for secret detection
+4. Pipeline fails if critical issues found
 
-## 4. Workflow 🔄
-1. **Trigger**: Any push or PR to `Project-1/**` triggers a GitHub Actions workflow.
-2. **Install Dependencies**: Installs required npm packages.
-3. **Run Scans**:
-   - **Semgrep** for code-level weaknesses.
-   - **npm audit** for package vulnerabilities.
-   - **Gitleaks** for secrets detection.
+## Project Structure
 
----
+```
+Project-1-Secure-CI-CD/
+├── .github/
+│   └── workflows/
+│       └── security.yml    # CI/CD pipeline
+├── src/
+│   └── app.js             # Node.js application
+├── package.json           # Dependencies
+└── .semgrep/
+    └── rules.yml          # Custom security rules
+```
 
-## 5. Value for Organizations 💼
-- **Automated Security Gates**  
-  - Stops vulnerable code before it reaches production.
-- **Shift-Left Enablement**  
-  - Integrates security directly into the developer workflow.
-- **Scalability & Reusability**  
-  - Easy to replicate across Node.js-based services.
-- **Auditability**  
-  - GitHub Actions provides traceable security logs.
+## Pipeline Features
 
----
-
-## 6. Conclusion ✅
-By integrating **SAST**, **SCA**, and **secrets scanning** into an automated pipeline, this project shows how to implement shift-left security effectively. It enables teams to deliver **secure, high-quality code** early and often — with minimal manual effort.
-
----
-
-🔗 [Back to my GitHub Profile](https://github.com/nfroze)
+- Automated security checks on every commit
+- Early vulnerability detection
+- Fail-fast approach for critical issues
+- Security scan results in GitHub Actions logs
